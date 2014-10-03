@@ -1,0 +1,12 @@
+The first real task is to write a program that will dump the state of our system to hard disk
+using :erlang.term_to_binary/1 and Elixir's File module. Focus on saving the state of gen_servers.
+Be creative while approaching the tradeoff between separation of concerns (transparent state mirroring,
+almost no additional code to be written in gen_server to be mirrored) and effectiveness (no data 
+duplication, RDB/snapshotting AOF/recording persistence combination).
+But please, *please* don't over-engineer this, we've got stuff to do :)
+
+Also, see updated project with application and root supervisor skeleton!
+And note that we have added ``mod`` keyword to application keyword list.
+
+P.S.
+http://elixir-lang.org/getting_started/mix_otp/5.html
