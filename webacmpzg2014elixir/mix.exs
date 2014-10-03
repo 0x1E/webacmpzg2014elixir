@@ -4,7 +4,7 @@ defmodule WebCamp.Mixfile do
   def project do
     [app: :webacmpzg2014elixir,
      version: "0.0.1",
-     elixir: "~> 0.15.2-dev",
+     elixir: "~> 1.0.0",
      deps: deps]
   end
 
@@ -26,8 +26,8 @@ defmodule WebCamp.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [ {:cowboy, "~> 1.0.0"},
-      {:plug,   "~> 0.6.0"},
-      {:gproc,  git: "https://github.com/uwiger/gproc", branch: "master"},
+      {:plug,   "~> 0.8.0"},
+      {:gproc,   git: "https://github.com/uwiger/gproc", branch: "master"},
     ]
   end
 end
